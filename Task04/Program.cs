@@ -4,21 +4,15 @@
 // 44, 5, 78 -> 78 
 // 22, 3, 9 -> 22
 
-Console.WriteLine("Введите три числа:");
-int numberA=Convert.ToInt32 (Console.ReadLine());
-int numberB=Convert.ToInt32 (Console.ReadLine());
-int numberC=Convert.ToInt32 (Console.ReadLine());
+Console.WriteLine("Введите первое число: ");
+int a=Convert.ToInt32 (Console.ReadLine());
 
-if(numberA>numberB && numberA>numberC)
-{
-    Console.WriteLine($"{numberA}=max");
+Console.WriteLine("Второе число: "); int b=Convert.ToInt32 (Console.ReadLine());
 
-}
-else if (numberB>numberA && numberB>numberC)
-{
-    Console.WriteLine($"{numberB}=max");
-}
-else
-{
-   Console.WriteLine($"{numberC}=max");
-}
+Console.WriteLine("Третье число: "); int c=Convert.ToInt32 (Console.ReadLine());
+
+int max=a;
+if (a > max) max = a;
+if (b > max) max = b;
+if (c > max) max = c;
+Console.WriteLine($"max {max}");
